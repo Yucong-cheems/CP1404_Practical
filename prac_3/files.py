@@ -1,0 +1,11 @@
+name = input("Enter your name: ")
+out_file = open("name.txt", "w")
+print(f"your name is: {name}", file=out_file)
+out_file.close()
+
+in_file = open('numbers.txt', "r")
+first_number = in_file.readline()
+second_number = in_file.readline()
+sum = float(first_number) + float(second_number)
+print(sum)
+in_file.close()
