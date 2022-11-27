@@ -28,30 +28,30 @@ def main():
 
 def is_valid_password(password):
     """Determine if the provided password is valid."""
-    if(len(MIN_LENGTH) > 2 and len(MAX_LENGTH) < 6):
+    if(len(password) > 2 and len(password) < 6):
 
-     count_lower = 0
-     count_upper = 0
-     count_digit = 0
-     count_special = 0
+       count_lower = 0
+       count_upper = 0
+       count_digit = 0
+       count_special = 0
 
     for char in password:
 
-        if(char.isdigit()):
+          if(char.isdigit()):
             count_digit = True
-        pass
+          pass
 
-        if (count_digit == 0):
+          if (count_digit == 0):
+
             return False
 
-        if(char.isalnum()):
+          if(char.isalnum()):
             count_special = True
-        else:
-            return False
+    else:
+        return False
     # and return False if it's zero
 
     # if we get here (without returning False), then the password must be valid
     return True
-
 
 main()
