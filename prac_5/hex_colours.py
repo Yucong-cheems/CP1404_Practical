@@ -9,7 +9,7 @@ color = {"Amber": "#ffbf00", "Amethyst": "#9966cc", "AntiqueWhite": "#faebd7", "
          "AntiqueWhite3": "#cdc0b0"}
 print(color)
 
-color_code = input("Enter a color name: ")
+color_code = input("Enter a color name: ").upper()
 
 while color_code != " ":
     if color_code in color:
@@ -18,4 +18,4 @@ while color_code != " ":
     else:
         print("invalid color code")
 
-    color_code = input("Enter a color name: ")
+    color_code = input("Enter a color name: ").upper()
