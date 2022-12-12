@@ -14,7 +14,6 @@ def main():
 
 
 def get_name(email):
-    prefix = email.split("@")[0]
     part = prefix.split(".")
     name = " ".join(part).title()
     return name
